@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variable-style.scss';
+
+body {
+    background: $background;
+    position: fixed;
+    padding: 0.5%;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+h1 {}
+h2 {}
+h3 {
+    color: $textcolor;
+}
+h4 {}
+h5 {}
+h6 {}

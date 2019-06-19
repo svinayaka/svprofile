@@ -1,5 +1,18 @@
 <div class="profileviewheader">
-  <h3>
-    {{profileName}}
-  </h3>
+  <div class="profileviewheader__leftheader">
+    <h3>
+      {{profileName}}
+    </h3>
+    <p>
+      {{profileDesignation}}
+    </p>
+  </div>
+  <div class="profileviewheader__rightheader">
+    <ul>
+      <li *ngFor="let eachContact of profileContactDetails">
+        <span>{{eachContact.contactType}}</span>
+        <span>{{eachContact.contactInfo}}</span>
+      </li>
+    </ul>
+  </div>
 </div>

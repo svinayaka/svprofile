@@ -3,6 +3,7 @@
 
 html {
     font-size: 16px;
+    color: $textcolor;
 }
 
 body {
@@ -19,12 +20,12 @@ h1 {}
 h2 {}
 h3 {
     font-size: 1rem;
-    color: $textcolor;
+    
 }
 h4 {}
 h5 {}
 h6 {}
 
 p {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
 }

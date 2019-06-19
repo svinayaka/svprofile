@@ -1,7 +1,20 @@
 @import '../../styles.scss';
 
 .profileviewheader {
-    position: absolute;
-    top: 0px;
-    bottom: 90%;
+    // position: absolute;
+    // top: 0px;
+    // bottom: 90%;
+    display: flex;
 }
+
+.profileviewheader__leftheader {
+    flex: 0.4;
+}
+
+.profileviewheader__rightheader {
+    flex: 0.6;
+    ul {
+        list-style: none;
+    }
+}
+

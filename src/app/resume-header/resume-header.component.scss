@@ -16,9 +16,20 @@
     ul {
         list-style: none;
         li {
+            display: flex;
+            justify-content: flex-end;
+            .profileviewheader__rightheader__para {
+                flex: 0.5;
+            }
+            .para__first {
+                text-align: right;
+            }
+            .para__second {
+                text-align: left;
+            }
             span {
-                display: inline-block;
-                width: 50%;
+                margin-left: 0.2%;
+                margin-right: 0.2%;
             }
         }
     }

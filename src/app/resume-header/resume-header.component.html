@@ -10,8 +10,9 @@
   <div class="profileviewheader__rightheader">
     <ul>
       <li *ngFor="let eachContact of profileContactDetails">
-        <span>{{eachContact.contactType}}</span>
-        <span>{{eachContact.contactInfo}}</span>
+        <p class="profileviewheader__rightheader__para para__first">{{eachContact.contactType}}</p>
+        <span>:</span>
+        <p class="profileviewheader__rightheader__para para__second">{{eachContact.contactInfo}}</p>
       </li>
     </ul>
   </div>

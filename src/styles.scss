@@ -34,3 +34,13 @@ p {
 span {
     font-size: 0.875rem;
 }
+
+button {
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+    background: lightblue;
+    width: 100%;
+    &:focus {
+        outline:0;
+    }
+}

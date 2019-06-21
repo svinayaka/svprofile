@@ -1,6 +1,8 @@
-<div>
-  <button class="accordion">{{title}}</button>
-  <div class="panel">
-    <p>{{content}}</p>
-  </div>
+<div class="accordion__container">
+  <ng-container *ngFor="let eachAcc of accordionInfo">
+    <button #btn class="accordion__container__btn" (click)="selectedBtn(btn)">{{eachAcc.title}}</button>
+    <div class="panel">
+      <p>{{eachAcc.content}}</p>
+    </div>
+  </ng-container>
 </div>

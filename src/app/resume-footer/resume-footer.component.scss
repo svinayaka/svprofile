@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
-.profileviewfooter {
+:host {
     position: absolute;
     bottom: 0px;
-    top:95%;
+    top: 95%;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChildren, ElementRef, QueryList } from '@angular/core';
+import { Component, OnInit, ViewChildren, ElementRef, QueryList, AfterViewInit } from '@angular/core';
 import { element } from '@angular/core/src/render3';
 
 @Component({
@@ -6,7 +6,7 @@ import { element } from '@angular/core/src/render3';
   templateUrl: './accordian-info.component.html',
   styleUrls: ['./accordian-info.component.scss']
 })
-export class AccordianInfoComponent implements OnInit {
+export class AccordianInfoComponent implements OnInit, AfterViewInit {
   @ViewChildren('btn') accordionBtn: QueryList<ElementRef>;
   accordionInfo = [
     {title: 'Technical Skills', content: `Ye to mention technical Skills dsfsdffwefwefewf`},
@@ -22,9 +22,10 @@ export class AccordianInfoComponent implements OnInit {
   }
 
   selectedBtn(event) {
-    this.hideAccordionData();
+    const elmClone = document.activeElement.nextElementSibling.cloneNode();
     const elm = document.activeElement.nextElementSibling;
-    (elm as any).hidden = false;
+    this.hideAccordionData();
+    (elm as any).hidden = !((elmClone as any).hidden);
   }
 
   hideAccordionData() {

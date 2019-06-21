@@ -37,7 +37,7 @@ span {
 
 button {
     border-radius: 0.2rem;
-    border: 1px solid gray;
+    border: 1px solid $bordercolor;
     background: lightblue;
     width: 100%;
     &:focus {

@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume-left-content.component.scss']
 })
 export class ResumeLeftContentComponent implements OnInit {
+  accordionInfo = [
+    {title: 'SUMMARY', content: `Ye to mention technical Skills dsfsdffwefwefewf`},
+    {title: 'TECHNICAL SKILLS', content: `Ye to mention technical Skills dsfsdffwefwefewf`},
+    {title: 'WORK EXPERIENCE', content: `Ye to mention technical Skills`},
+    {title: 'QUALIFICATIONS', content: `Ye to mention technical Skills`},
+    {title: 'INTERESTS', content: `Ye to mention technical Skills`}
+  ];
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

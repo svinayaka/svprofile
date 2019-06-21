@@ -1,5 +1,8 @@
 @import '../../styles.scss';
 
+:host { }
 .profileviewcontent {
+    padding: 0.2%;
     display: flex;
+    height: 80%;
  }

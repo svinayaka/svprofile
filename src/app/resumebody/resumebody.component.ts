@@ -1,6 +1,5 @@
-import { Component, OnInit, ChangeDetectorRef, NgZone } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-// import "data" from './workExp.json';
 
 @Component({
   selector: 'app-resumebody',
@@ -12,7 +11,7 @@ export class ResumebodyComponent implements OnInit {
   skillInfo = [];
   techInfo = [];
   summaryInfo = [];
-  constructor(private http: HttpClient, private cd: ChangeDetectorRef, private zone: NgZone) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     // tslint:disable-next-line:max-line-length

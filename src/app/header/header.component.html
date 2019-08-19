@@ -1,19 +1,17 @@
 <div class="header">
   <div>
-    <h2>Siddhi Vinayaka</h2>
-    <h5>Web Application Developer</h5>
-    <p>
-      I am web app developer. Interested in developing responsive web application.
-    </p>
+    <h2>{{contactInfo?.name}}</h2>
+    <h5>{{contactInfo?.title}}</h5>
+    <p>{{contactInfo?.description}}</p>
   </div>
   <div >
     <img class="img" src="./../../assets/images/MyProfile.jpg">
   </div>
   <div>
     <ul>
-      <li><p>svinayaka290489@gmail.com</p><span></span></li>
-      <li><p>8095983167/9480559739</p><span></span></li>
-      <li><p></p><span></span></li>
+      <li><p>{{contactInfo?.email}}</p><span></span></li>
+      <li><p>{{contactInfo?.phone}}</p><span></span></li>
+      <li><p>{{contactInfo?.address + ", " + contactInfo?.location + "-" + contactInfo?.pincode}}</p><span></span></li>
       <li><p></p><span></span></li>
     </ul>
   </div>

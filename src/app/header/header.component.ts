@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  contactInfo = null;
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    // tslint:disable-next-line:max-line-length
+    this.http.get('./assets/contact.json').subscribe(this.onContactSuccess.bind(this), this.onContactError.call(this, 'Error in fetching Work Experience!'));
   }
 
+  onContactSuccess(data) { this.contactInfo = data.contact; }
+  onContactError(error) { }
 }

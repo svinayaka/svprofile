@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ResumebodyComponent } from './resumebody/resumebody.component';
 import { WorkexperienceComponent } from './components/workexperience/workexperience.component';
+import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ResumebodyComponent,
-    WorkexperienceComponent
+    WorkexperienceComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

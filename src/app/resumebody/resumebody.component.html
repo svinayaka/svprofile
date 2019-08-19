@@ -12,18 +12,6 @@
         </app-workexperience>
       </ng-container>
     </div>
-    <div>
-        <h5>Work Experience</h5>
-        <ng-container *ngFor="let workExp of workInfo">
-          <app-workexperience 
-            [title]="workExp.title"
-            [subTitle]="workExp.designation"
-            [workRange]="workExp.dataRangeFrom"
-            [location]="workExp.location"
-            [achieveList]="workExp.achieved">
-          </app-workexperience>
-        </ng-container>
-      </div>
   </div>
   <div>
     <div class="resumeLeftContent">

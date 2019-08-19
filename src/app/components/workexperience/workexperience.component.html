@@ -1,7 +1,7 @@
 <div class="workExp">
-  <h6>{{title}}</h6>
-  <p>{{subTitle}}</p>
-  <div>
+  <h6 *ngIf="title" class="title">{{title}}</h6>
+  <p *ngIf="subTitle">{{subTitle}}</p>
+  <div *ngIf="workRange && location">
     <span>{{workRange}}</span>
     <span>{{location}}</span>
   </div>

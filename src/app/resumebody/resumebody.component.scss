@@ -2,3 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.resumeLeftContent {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.resumeRightContent {
+    display: grid;
+    grid-template-rows: 1fr;
+}

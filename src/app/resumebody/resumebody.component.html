@@ -1,23 +1,47 @@
 <div class="resumeBody">
-  <div>
-    <h5>Work Experience</h5>
-    <ng-container *ngFor="let workExp of workInfo">
-      <app-workexperience 
-        [title]="workExp.title"
-        [subTitle]="workExp.designation"
-        [workRange]="workExp.dataRangeFrom"
-        [location]="workExp.location"
-        [achieveList]="workExp.achieved">
-      </app-workexperience>
-    </ng-container>
+  <div class="resumeLeftContent">
+    <div>
+      <h5>Work Experience</h5>
+      <ng-container *ngFor="let workExp of workInfo">
+        <app-workexperience 
+          [title]="workExp.title"
+          [subTitle]="workExp.designation"
+          [workRange]="workExp.dataRangeFrom"
+          [location]="workExp.location"
+          [achieveList]="workExp.achieved">
+        </app-workexperience>
+      </ng-container>
+    </div>
+    <div>
+        <h5>Work Experience</h5>
+        <ng-container *ngFor="let workExp of workInfo">
+          <app-workexperience 
+            [title]="workExp.title"
+            [subTitle]="workExp.designation"
+            [workRange]="workExp.dataRangeFrom"
+            [location]="workExp.location"
+            [achieveList]="workExp.achieved">
+          </app-workexperience>
+        </ng-container>
+      </div>
   </div>
   <div>
-    <h5>Skills</h5>
-    <ng-container *ngFor="let skillExp of skillInfo">
+    <div class="resumeLeftContent">
       <div>
-        <span>{{skillExp.skillName}}</span>
-        <span><progress [value]="skillExp.proficencyLevel" max="100"></progress></span>
+          <h5>Summary</h5>
+          <app-workexperience 
+            [achieveList]="summaryInfo">
+          </app-workexperience>
       </div>
-    </ng-container>
+      <div>
+        <h5>Skills</h5>
+        <ng-container *ngFor="let skillExp of skillInfo">
+          <div>
+            <span>{{skillExp.skillName}}</span>
+            <span><progress [value]="skillExp.proficencyLevel" max="100"></progress></span>
+          </div>
+        </ng-container>
+      </div>
+    </div>
   </div>
 </div>

@@ -4,7 +4,8 @@
         "designation":"Software Engineer",
         "dataRangeFrom": "6th Aug 2018 - Present",
         "location":"Bangalore",
-        "description": ""
+        "description": "",
+        "achieved": [{"text": "Working as a web developer here"}]
     },
     { "title": "Time Inc",  
         "designation":"Software Engineer",

@@ -16,7 +16,7 @@ export class WorkexperienceComponent implements OnInit {
   @Input() subTitle: string;
   @Input() workRange: string;
   @Input() location: string;
-  @Input() project: string;
+  @Input() projects: string;
   @Input() achieveList: Array<IAchievementDetails>;
   constructor() { }
 

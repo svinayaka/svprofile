@@ -1,9 +1,12 @@
 <div class="workExp">
   <h6 *ngIf="title" class="title">{{title}}</h6>
   <p *ngIf="subTitle">{{subTitle}}</p>
+  <div>
+    <h6>Project: </h6>
+    <p>{{project}}</p>
+  </div>
   <div *ngIf="workRange && location">
-    <span>{{workRange}}</span>
-    <span>{{location}}</span>
+    <span>{{workRange +" - "+ location}}</span>
   </div>
   <app-list [achieveLists]="achieveList"></app-list>
 </div>

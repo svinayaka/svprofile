@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResumeLeftContentComponent } from './resume-left-content.component';
+import { ResumebodyComponent } from './resumebody.component';
 
-describe('ResumeLeftContentComponent', () => {
-  let component: ResumeLeftContentComponent;
-  let fixture: ComponentFixture<ResumeLeftContentComponent>;
+describe('ResumebodyComponent', () => {
+  let component: ResumebodyComponent;
+  let fixture: ComponentFixture<ResumebodyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeLeftContentComponent ]
+      declarations: [ ResumebodyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeLeftContentComponent);
+    fixture = TestBed.createComponent(ResumebodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

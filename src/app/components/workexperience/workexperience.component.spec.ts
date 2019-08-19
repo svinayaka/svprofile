@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ResumeRightContentComponent } from './resume-right-content.component';
+import { WorkexperienceComponent } from './workexperience.component';
 
-describe('ResumeRightContentComponent', () => {
-  let component: ResumeRightContentComponent;
-  let fixture: ComponentFixture<ResumeRightContentComponent>;
+describe('WorkexperienceComponent', () => {
+  let component: WorkexperienceComponent;
+  let fixture: ComponentFixture<WorkexperienceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeRightContentComponent ]
+      declarations: [ WorkexperienceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeRightContentComponent);
+    fixture = TestBed.createComponent(WorkexperienceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

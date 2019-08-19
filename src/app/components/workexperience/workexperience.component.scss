@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.workExp {
+    position: relative;
+    margin-left: 30px;
+}
+.workExp::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: $bulletPointbackground;
+    margin-left: -25px;
+    top: 10px;
+}

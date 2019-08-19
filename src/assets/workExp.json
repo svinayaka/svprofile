@@ -1,0 +1,17 @@
+{
+  "workexperience": [
+    { "title": "General Electric",  
+        "designation":"Software Engineer",
+        "dataRangeFrom": "6th Aug 2018 - Present",
+        "location":"Bangalore",
+        "description": ""
+    },
+    { "title": "Time Inc",  
+        "designation":"Software Engineer",
+        "dataRangeFrom": "6th Aug 2018 - Present",
+        "location":"Bangalore",
+        "description": "",
+        "achieved": [{"text": "Working as a web developer here"}]
+    }
+  ]
+}

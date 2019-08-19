@@ -6,7 +6,12 @@ html {
     color: $textcolor;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
+    box-sizing: border-box;
     background: $background;
     position: fixed;
     padding: 0.5%;

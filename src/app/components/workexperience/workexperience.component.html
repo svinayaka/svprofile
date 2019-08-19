@@ -1,0 +1,13 @@
+<div class="workExp">
+  <h6>{{title}}</h6>
+  <p>{{subTitle}}</p>
+  <div>
+    <span>{{workRange}}</span>
+    <span>{{location}}</span>
+  </div>
+  <ul>
+    <li *ngFor="let eachAchieve of achieveList;">
+      {{eachAchieve.text}}
+    </li>
+  </ul>
+</div>

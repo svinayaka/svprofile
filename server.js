@@ -1,4 +1,5 @@
 //Install express server
+// const spdy = require('spdy'); http2 express, but requires certification, not using it for now!
 const express = require('express');
 const path = require('path');
 

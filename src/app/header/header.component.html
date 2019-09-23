@@ -7,15 +7,26 @@
       <h2>{{contactInfo?.name}}</h2>
       <h5>{{contactInfo?.title}}</h5>
       <p>{{contactInfo?.description}}</p>
-      <p><span class=""></span></p>
     </div>
   </div>
   <div>
     <ul>
       <li><p>{{contactInfo?.email}}</p><span></span></li>
-      <li><p>{{contactInfo?.phone}}</p><span></span></li>
+      <li>
+        <p>
+          <span [ngClass]="contactInfo?.phone?.icon"></span>
+          <span>{{contactInfo?.phone.info}}</span>
+        </p>
+      </li>
+      <li>
+        <div *ngFor="let eachLink of contactInfo?.links">
+          <a href="{{eachLink?.info}}">
+            <i [ngClass]="eachLink?.icon"></i>
+            <span>{{eachLink?.text}}</span>
+          </a>
+        </div>
+      </li>
       <li><p>{{contactInfo?.address + ", " + contactInfo?.location + "-" + contactInfo?.pincode}}</p><span></span></li>
-      <li><p></p><span></span></li>
     </ul>
   </div>
 </div>

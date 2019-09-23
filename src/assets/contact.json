@@ -2,7 +2,11 @@
     "contact": {
         "name": "Siddhi Vinayaka",
         "title": "Web Application Developer",
-        "phone": "9480559739/8095983167",
+        "phone": { "text": "PHONE", "info": "9480559739/8095983167", "icon": "fa fa-mobile"},
+        "links": [ 
+            { "text": "Linkdin", "info": "https://www.linkedin.com/in/siddhivinayaka/", "icon": "fa fa-linkedin-square"},
+            { "text": "Wordpress", "info": "https://svinayaka.wordpress.com/", "icon": "fa fa-wordpress"}
+        ],
         "description": "I am web app developer. Interested in developing responsive web application",
         "email": "svinayaka290489@gmail.com",
         "address": "105, B-block, Olive apartment, hoodi main road",

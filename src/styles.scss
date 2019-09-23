@@ -10,6 +10,10 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    font-family: monospace;
+}
+
 body {
     box-sizing: border-box;
     background: $background;
@@ -21,15 +25,18 @@ body {
     left: 0px;
 }
 
-h1 {}
-h2 {}
+h1 { margin: 0px}
+h2 { margin: 0px }
 h3 {
+    margin: 0px;
     font-size: 1rem;
-    
 }
-h4 {}
-h5 {}
-h6 {}
+h4 { margin: 0px }
+h5 { margin: 0px }
+h5::after {
+    margin: 0px
+}
+h6 { margin: 0px }
 
 p {
     font-size: 0.875rem;

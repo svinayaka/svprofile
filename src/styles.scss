@@ -15,6 +15,11 @@ body {
     border: 20px solid $bordercolor;
     box-sizing: border-box;
     background: $background;
+    background: -moz-radial-gradient(center, ellipse cover,  #f8ffe8 0%, #e3f5ab 18%, #f8ffe8 41%, #f8ffe8 74%, #b7df2d 100%); 
+
+background: -webkit-radial-gradient(center, ellipse cover,  #f8ffe8 0%,#e3f5ab 18%,#f8ffe8 41%,#f8ffe8 74%,#b7df2d 100%); 
+
+background: radial-gradient(ellipse at center,  #f8ffe8 0%,#e3f5ab 18%,#f8ffe8 41%,#f8ffe8 74%,#b7df2d 100%); 
     // position: fixed;
     padding: 0.5%;
     top:0px;
@@ -43,6 +48,10 @@ h6 { margin: 0px }
 p {
     font-size: 0.875rem;
     margin: 0px;
+}
+
+a {
+    color: $anchorColor;
 }
 
 span {

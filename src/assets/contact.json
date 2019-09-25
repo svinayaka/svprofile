@@ -2,7 +2,7 @@
     "contact": {
         "name": "Siddhi Vinayaka",
         "title": "Web Application Developer",
-        "phone": { "text": "PHONE", "info": "9480559739/8095983167", "icon": "fa fa-mobile"},
+        "phone": { "text": "PHONE", "info": "9480559739/8095983167", "icon": "fa fa-phone-square"},
         "links": [ 
             { "text": "Linkdin", "info": "https://www.linkedin.com/in/siddhivinayaka/", "icon": "fa fa-linkedin-square"},
             { "text": "Wordpress", "info": "https://svinayaka.wordpress.com/", "icon": "fa fa-wordpress"}

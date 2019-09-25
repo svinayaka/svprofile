@@ -54,6 +54,14 @@ a {
     color: $anchorColor;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+    li {
+        list-style-type: none;
+    }
+}
+
 span {
     font-size: 0.875rem;
 }

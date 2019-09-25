@@ -9,12 +9,14 @@
     display: grid;
     grid-template-rows: 1fr;
     padding: 4%;
+    grid-gap: 2%;
 }
 
 .resumeRightContent {
     display: grid;
     grid-template-rows: 1fr;
     padding: 4%;
+    grid-gap: 2%;
 }
 
 .header-detail {
@@ -31,7 +33,7 @@
 }
 
 @keyframes example { 
-    0% { left: 60px; }
+    0% { left: 100px; }
     100% { left: 0px; }
 }
 

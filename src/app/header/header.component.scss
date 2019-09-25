@@ -5,8 +5,14 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.profileImage_name {
+.profileImageDescription {
     display: flex;
+}
+.profileContactDescription {
+    display: grid;
+    grid-auto-rows: 1fr;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 .img {
@@ -18,7 +24,7 @@
     border-radius: 0%;
     border: 5px double #9fa8a3;
     position: relative;
-    top: 30px;
+    top: 20px;
     border-radius: 4px;
 }
 

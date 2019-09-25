@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    border: 20px solid $bordercolor;
     box-sizing: border-box;
     background: $background;
     // position: fixed;
@@ -23,6 +24,10 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+hr {
+    margin: 0px;
 }
 
 h1 { margin: 0px}

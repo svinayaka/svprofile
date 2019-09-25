@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .resumeBody {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,9 +8,31 @@
 .resumeLeftContent {
     display: grid;
     grid-template-rows: 1fr;
+    padding: 4%;
 }
 
 .resumeRightContent {
     display: grid;
     grid-template-rows: 1fr;
+    padding: 4%;
 }
+
+.header-detail {
+    width: 50%;
+    background: $foreground;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+@keyframes example { 
+    0% { left: 60px; }
+    100% { left: 0px; }
+}
+
+

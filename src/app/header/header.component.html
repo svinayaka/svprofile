@@ -11,7 +11,12 @@
   </div>
   <div>
     <ul>
-      <li><p>{{contactInfo?.email}}</p><span></span></li>
+      <li>
+        <p>
+          <span [ngClass]="contactInfo?.email?.icon"></span>
+          <span>{{contactInfo?.email?.info}}</span>
+        </p>
+      </li>
       <li>
         <p>
           <span [ngClass]="contactInfo?.phone?.icon"></span>

@@ -12,10 +12,14 @@
   <div class="profileContactDescription">
     <ul>
       <li>
-        <p>
+        <a href="mailto:{{contactInfo?.email?.info}}" target="blank">
+          <i [ngClass]="contactInfo?.email?.icon"></i>
+          <span>{{contactInfo?.email?.text}}</span>
+        </a>
+        <!-- <p>
           <span [ngClass]="contactInfo?.email?.icon"></span>
           <span>{{contactInfo?.email?.info}}</span>
-        </p>
+        </p> -->
       </li>
       <li>
         <p>

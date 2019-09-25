@@ -6,15 +6,12 @@ html {
     color: $textcolor;
 }
 
-*, *::before, *::after {
+* {
     box-sizing: border-box;
 }
 
-* {
-    font-family: monospace;
-}
-
 body {
+    font-family: serif;
     border: 20px solid $bordercolor;
     box-sizing: border-box;
     background: $background;

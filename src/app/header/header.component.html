@@ -25,7 +25,7 @@
       </li>
       <li>
         <div *ngFor="let eachLink of contactInfo?.links">
-          <a href="{{eachLink?.info}}">
+          <a href="{{eachLink?.info}}" target="blank">
             <i [ngClass]="eachLink?.icon"></i>
             <span>{{eachLink?.text}}</span>
           </a>

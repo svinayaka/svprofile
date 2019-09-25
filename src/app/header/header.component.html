@@ -12,7 +12,7 @@
   <div class="profileContactDescription">
     <ul>
       <li>
-        <a href="mailto:{{contactInfo?.email?.info}}" target="blank">
+        <a href="mailto:{{contactInfo?.email?.info}}" target="_blank">
           <i [ngClass]="contactInfo?.email?.icon"></i>
           <span>{{contactInfo?.email?.text}}</span>
         </a>
@@ -29,7 +29,7 @@
       </li>
       <li>
         <div *ngFor="let eachLink of contactInfo?.links">
-          <a href="{{eachLink?.info}}" target="blank">
+          <a href="{{eachLink?.info}}" target="_blank">
             <i [ngClass]="eachLink?.icon"></i>
             <span>{{eachLink?.text}}</span>
           </a>

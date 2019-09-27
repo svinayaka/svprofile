@@ -8,9 +8,26 @@
       <div>
         <h5 class="header-detail">Skills</h5>
         <ng-container *ngFor="let skillExp of skillInfo">
-          <div>
-            <span>{{skillExp.skillName}}</span>
-            <span><progress [value]="skillExp.proficencyLevel" max="100"></progress></span>
+          <div class="resumeSkill">
+            <span class="resumeSkill-Name">{{skillExp.skillName}}</span>
+            <div class="resumeSkill-effectiency">
+              <!-- <progress [value]="skillExp.proficencyLevel" max="100"></progress> -->
+              <div class="skill-ratings">
+                <div></div>
+              </div>
+              <div class="skill-ratings">
+                  <div></div>
+              </div>
+              <div class="skill-ratings">
+                  <div></div>
+              </div>
+              <div class="skill-ratings">
+                  <div></div>
+              </div>
+              <div class="skill-ratings">
+                  <div></div>
+              </div>
+            </div>
           </div>
         </ng-container>
       </div>

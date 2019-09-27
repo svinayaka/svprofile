@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { debug } from 'util';
 
 @Component({
   selector: 'app-resumebody',
@@ -27,7 +28,16 @@ export class ResumebodyComponent implements OnInit {
   onWorkSuccess(data) { this.workInfo = data.workexperience; }
   onWorkError(errorTxt) { }
 
-  onSkillSuccess(data) { this.skillInfo = data.workSkills; }
+  onSkillSuccess(data) {
+    this.skillInfo = data.workSkills;
+    this.skillInfo.forEach(eachSkill => {
+      const rating = (eachSkill.level) / 20;
+      const rated = (Math.floor(eachSkill.proficencyLevel / 20));
+      eachSkill.ratings = Array(rating).fill(rating).map(eachRating => {
+        return  { rating: rating, rated: rated };
+      });
+    });
+  }
   onSkillError(errorTxt) { }
 
   onTechSuccess(data) { this.techInfo = data.technical; }

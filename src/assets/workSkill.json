@@ -2,30 +2,37 @@
     "workSkills": [
         {
             "skillName": "HTML",
+            "level": "100",
             "proficencyLevel": "90"
         },
         {
             "skillName": "CSS",
+            "level": "100",
             "proficencyLevel": "80"
         },
         {
             "skillName": "BootStrap",
+            "level": "100",
             "proficencyLevel": "80"
         },
         {
             "skillName": "JavaScript",
+            "level": "100",
             "proficencyLevel": "80"
         },
         {
             "skillName": "Angular",
+            "level": "100",
             "proficencyLevel": "80"
         },
         {
             "skillName": "React",
+            "level": "100",
             "proficencyLevel": "30"
         },
         {
             "skillName": "React",
+            "level": "100",
             "proficencyLevel": "30"
         }
     ]

@@ -11,8 +11,8 @@
           <div class="resumeSkill">
             <span class="resumeSkill-Name">{{skillExp.skillName}}</span>
             <div class="resumeSkill-effectiency">
-              <div *ngFor="let eachRating of skillExp.ratings" class="skill-ratings">
-                <div></div>
+              <div *ngFor="let eachRating of skillExp.ratings; let i = index" class="skill-ratings">
+                <div [ngClass]="{'selRate': eachRating.rated >= i+1}"></div>
               </div>
             </div>
           </div>

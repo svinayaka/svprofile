@@ -59,7 +59,17 @@
         {
             "skillName": "React",
             "level": "100",
-            "proficencyLevel": "30"
+            "proficencyLevel": "40"
+        },
+        {
+            "skillName": "Node",
+            "level": "100",
+            "proficencyLevel": "40"
+        },
+        {
+            "skillName": "Npm",
+            "level": "100",
+            "proficencyLevel": "70"
         }
     ]
 }

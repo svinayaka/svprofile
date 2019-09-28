@@ -64,18 +64,7 @@
         {"text": "Developed graphical chart (D3 force layout), to easily understand relevance and relationship between multiple skills of a searched candidate."}
       ]
     },
-    { "title": "Kin Advisor",  
-      "designation":"Mobile App Developer",
-      "dataRangeFrom": "July 2015 — Nov 2015",
-      "location":"Bangalore",
-      "projects": [
-        { "title":"Body Balance App", "project":"A fitness mobile application" , "description": "IOS and Android app built for booking trainer for healthy and fitness life." }
-      ],
-      "achieved": [
-        {"text": "Taking ownership in developing application, handling responsiveness for multiple devices."},
-        {"text": "Constant effort to learn new technologies & implementation, achiever, go & getter attitude."}
-      ]
-    },
+    
     { "title": "Edcite",  
       "designation":"Software Engineer",
       "dataRangeFrom": "Dec 2013 — June 2015",

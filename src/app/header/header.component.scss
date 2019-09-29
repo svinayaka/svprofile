@@ -29,8 +29,8 @@
     width: 150px;
     max-height: 100%;
     object-fit: cover;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     border-radius: 0%;
     border: 5px double #9fa8a3;
     position: relative;

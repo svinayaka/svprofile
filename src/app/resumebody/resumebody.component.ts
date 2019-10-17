@@ -24,10 +24,6 @@ export class ResumebodyComponent implements OnInit {
     this.privHttp.get('./assets/technical.json').subscribe(this.onTechSuccess.bind(this), this.onTechError.call(this, 'Error in fetching Technology!'));
     // tslint:disable-next-line:max-line-length
     this.privHttp.get('./assets/summary.json').subscribe(this.onSummarySuccess.bind(this), this.onSummaryError.call(this, 'Error in fetching Summary!'));
-    
-    // this.privHttp.get('https://svnodeservices.herokuapp.com').subscribe(resp => {
-    //   console.log(resp);
-    // });
   }
 
   onWorkSuccess(data) { this.workInfo = data.workexperience; }

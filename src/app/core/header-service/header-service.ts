@@ -5,23 +5,24 @@ import { HttpHeaders, HttpClient } from '@angular/common/http';
 export class HttpClientReqRes {
     constructor(private http: HttpClient) { }
 
-    createAuthorizationHeader(httpHeader: HttpHeaders) {
-        httpHeader = httpHeader.append('Content-Type', 'application/json');
-        httpHeader = httpHeader.append('authorization', 'auth-token');
-        httpHeader = httpHeader.append('x-corralation-id', '12345');
-        httpHeader = httpHeader.append('Cache-Control', 'no-cache');
-        httpHeader = httpHeader.append('Keep-Alive', 'timeout=5, max=1000');
-        httpHeader = httpHeader.append('Access-Control-Allow-Origin', '*');
-        httpHeader = httpHeader.append('Content-Language', 'en-US');
+    createAuthorizationHeader() {
+        const head = {
+            'Content-Type': 'application/json',
+            authorization: 'auth-token',
+            'x-corralation-id': '12345',
+            'Cache-Control': 'no-cache',
+            'Keep-Alive': 'timeout=5, max=1000',
+            'Access-Control-Allow-Origin': '*',
+            'Content-Language': 'en-US'
+        };
+        return new HttpHeaders(head);
     }
     get(url) {
-        const header = new HttpHeaders();
-        this.createAuthorizationHeader(header);
+        const header = this.createAuthorizationHeader();
         return this.http.get(url, { headers: header });
     }
     post(url) {
-        const header = new HttpHeaders();
-        this.createAuthorizationHeader(header);
+        const header = this.createAuthorizationHeader();
         return this.http.post(url, { headers: header });
     }
 }

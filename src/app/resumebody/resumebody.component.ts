@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { debug } from 'util';
+import { HttpClientReqRes } from '../core/header-service/header-service';
 
 @Component({
   selector: 'app-resumebody',
@@ -12,17 +13,21 @@ export class ResumebodyComponent implements OnInit {
   skillInfo = [];
   techInfo = [];
   summaryInfo = [];
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private privHttp: HttpClientReqRes) { }
 
   ngOnInit() {
     // tslint:disable-next-line:max-line-length
-    this.http.get('./assets/workExp.json').subscribe(this.onWorkSuccess.bind(this), this.onWorkError.call(this, 'Error in fetching Work Experience!'));
+    this.privHttp.get('./assets/workExp.json').subscribe(this.onWorkSuccess.bind(this), this.onWorkError.call(this, 'Error in fetching Work Experience!'));
     // tslint:disable-next-line:max-line-length
-    this.http.get('./assets/workSkill.json').subscribe(this.onSkillSuccess.bind(this), this.onSkillError.call(this, 'Error in fetching Skill Experience!'));
+    this.privHttp.get('./assets/workSkill.json').subscribe(this.onSkillSuccess.bind(this), this.onSkillError.call(this, 'Error in fetching Skill Experience!'));
     // tslint:disable-next-line:max-line-length
-    this.http.get('./assets/technical.json').subscribe(this.onTechSuccess.bind(this), this.onTechError.call(this, 'Error in fetching Technology!'));
+    this.privHttp.get('./assets/technical.json').subscribe(this.onTechSuccess.bind(this), this.onTechError.call(this, 'Error in fetching Technology!'));
     // tslint:disable-next-line:max-line-length
-    this.http.get('./assets/summary.json').subscribe(this.onSummarySuccess.bind(this), this.onSummaryError.call(this, 'Error in fetching Summary!'));
+    this.privHttp.get('./assets/summary.json').subscribe(this.onSummarySuccess.bind(this), this.onSummaryError.call(this, 'Error in fetching Summary!'));
+    
+    // this.privHttp.get('https://svnodeservices.herokuapp.com').subscribe(resp => {
+    //   console.log(resp);
+    // });
   }
 
   onWorkSuccess(data) { this.workInfo = data.workexperience; }

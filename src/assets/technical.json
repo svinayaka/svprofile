@@ -1,0 +1,48 @@
+{
+
+    "technical": [{
+            "title": "Front End Technologies",
+            "skills": [
+                { "text": "HTML" },
+                { "text": "CSS" },
+                { "text": "Flex, Grid CSS" },
+                { "text": "LESS" },
+                { "text": "SCSS" },
+                { "text": "Kendo UI" },
+                { "text": "Bootstrap" },
+                { "text": "JavaScript" },
+                { "text": "TypeScript" },
+                { "text": "jQuery" },
+                { "text": "ES6" },
+                { "text": "Angular Js" },
+                { "text": "Angular" },
+                { "text": "HTML" }
+            ]
+        },
+        {
+            "title": "Unit Testing Technologies",
+            "skills" : [
+                { "text": "Karma" },
+                { "text": "Jasmine" }
+            ]
+        },
+        {
+            "title": "Build tools",
+            "skills" : [
+                { "text": "Grunt" },
+                { "text": "Gulp" },
+                { "text": "TFS" },
+                { "text": "GIT" },
+                { "text": "npm" },
+                { "text": "Jenkins" },
+                { "text": "Kubernates" }
+            ]
+        },
+        {
+            "title": "Back End Technologies",
+            "backEnd" : [
+                { "text": "" }
+            ]
+        }
+    ]
+  }

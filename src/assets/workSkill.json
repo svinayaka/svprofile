@@ -1,0 +1,75 @@
+{
+    "workSkills": [
+        {
+            "skillName": "HTML/HTML5",
+            "level": "100",
+            "proficencyLevel": "90"
+        },
+        {
+            "skillName": "CSS",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "LESS/SCSS",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "jQuery",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "BootStrap",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "JavaScript",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "ES6",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "TypeScript",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        
+        {
+            "skillName": "CSS",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "Angular",
+            "level": "100",
+            "proficencyLevel": "80"
+        },
+        {
+            "skillName": "JS Design patters",
+            "level": "100",
+            "proficencyLevel": "60"
+        },
+        {
+            "skillName": "React",
+            "level": "100",
+            "proficencyLevel": "40"
+        },
+        {
+            "skillName": "Node",
+            "level": "100",
+            "proficencyLevel": "40"
+        },
+        {
+            "skillName": "Npm",
+            "level": "100",
+            "proficencyLevel": "70"
+        }
+    ]
+}

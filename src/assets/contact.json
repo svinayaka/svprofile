@@ -1,0 +1,18 @@
+{
+    "contact": {
+        "name": "Siddhi Vinayaka",
+        "title": "Web Application Developer",
+        "phone": { "text": "PHONE", "info": "9480559739/8095983167", "icon": "fa fa-phone-square"},
+        "links": [ 
+            { "text": "Linkdin", "info": "https://www.linkedin.com/in/siddhivinayaka/", "icon": "fa fa-linkedin-square"},
+            { "text": "TeckBlog", "info": "https://svinayaka.wordpress.com/", "icon": "fa fa-wordpress"},
+            { "text": "TechSkills", "info": "https://svtechskill.herokuapp.com/", "icon": "fa fa-external-link-square"  },
+            { "text": "TeckProjects", "info": "http://svselfprojects.herokuapp.com/", "icon": "fa fa-external-link-square"  }
+        ],
+        "description": "I am web app developer. Interested in developing responsive web application",
+        "email": { "text": "Email", "info": "svinayaka290489@gmail.com", "icon": "fa fa-envelope" },
+        "address": "105, B-block, Olive apartment, hoodi main road",
+        "location": "Bangalore",
+        "pincode": 560048
+    }
+}

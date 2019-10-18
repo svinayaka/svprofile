@@ -1,0 +1,92 @@
+{
+  "workexperience": [
+    { "title": "General Electric",  
+        "designation":"Software Engineer",
+        "dataRangeFrom": "Aug 2018 — Present",
+        "location":"Bangalore",
+        "projects": [
+          { "title": "Swirl",
+            "project": "An Analytic Apps built  on top of supporting framework AI App",
+            "description": "A supportive framework platform, which allows run multiple analytic apps support based on tenants multi app users"
+          },
+          { "title": "Anomaly Detection App",
+            "project": "",
+            "description": "An app that provides end users the visibility on their systems/assets and the corresponding anomalies (analytics generated), with appropriate analysis mechanisms (charts) so that he/she can take actions (scheduled maintenance etc.)."
+          }
+        ],
+        "achieved": [
+          {"text": "I was part of Swirl framework & Anomaly Detection projects."},
+          {"text": "Developed statistical visualization charts, interactive graphs using statistics data, which resulted in better understanding of data by the application user."},
+          {"text": "Implemented UI based on mock up screen resulted in responsive UI, enhancing UX."},
+          {"text":"Implemented and followed right coding standard practices, which almost avoided bug free application."},
+          {"text":"Built configurable, dynamic forms with supporting configurable dynamic components, from rich features supported by Swirl Framework platform, resulted in enhancing application user experience."},
+          {"text":"Enhanced performance and monitoring Swirl & Anomaly Detection app and its usage at app development life cycle stages."}
+        ]
+    },
+    { "title": "Time Inc",  
+        "designation":"Software Engineer",
+        "dataRangeFrom": "April 2017 — Aug 2018",
+        "location":"Bangalore",
+        "projects": [ 
+          { "title": "Adb Admin 2.0", "project": "A parental adminstrator application for all sub media applications", "description": "Re-development project, using web latest technology"}
+        ],
+        "achieved": [
+          {"text": "I was part of Adb Admin project."},
+          {"text": "Developed reusable components, which resulted in reducing of time and increasing productivity."},
+          {"text": "Planned and implemented better UI design screen, resulted in better user experience."},
+          {"text": "Developed and implemented modular code, which increased scalability of the application."}
+        ]
+    },
+    { "title": "Mphasis",  
+      "designation":"Software Engineer",
+      "dataRangeFrom": "June 2016 — April 2017",
+      "location":"Bangalore",
+      "projects": [ 
+        { "title": "CMM (Custom My Module)", "project":"", "description": "Web application, involves generate electric components from existing prototype/global prototype"}
+      ],
+      "description": "Web application, involves generate electric components from existing prototype/global prototype",
+      "achieved": [
+        {"text": "I was part of CMM project (Customize My Modal)."},
+        {"text": "Improved performance and user experience, by using right UI design patterns."},
+        {"text": "Implemented unit test in project, to increase efficiency and reliability of the application."}
+      ]
+    },
+    { "title": "Spire",  
+      "designation":"Software Engineer",
+      "dataRangeFrom": "Dec 2015 — May 2016",
+      "location":"Bangalore",
+      "projects": [
+        { "title":"Tag Cloud UI", "project":"" , "description": "Establishes relation between each OOPs skills & its relevant skills like priority, weight-age, etc." },
+        { "title":"Tag Automation" , "project": "", "description": "CRUD on Domains, establish match every relevant skills of the each domain." }
+      ],
+      "achieved": [
+        {"text": "Developed 2 internal web projects (Tag Cloud UI & Tag Automation), which helped internal teams in their core proejcts."},
+        {"text": "Developed graphical chart (D3 force layout), to easily understand relevance and relationship between multiple skills of a searched candidate."}
+      ]
+    },
+    { "title": "Kin Advisor",  
+      "designation":"Mobile App Developer",
+      "dataRangeFrom": "July 2015 — Nov 2015",
+      "location":"Bangalore",
+      "projects": [
+        { "title":"Body Balance App", "project":"A fitness mobile application" , "description": "IOS and Android app built for booking trainer for healthy and fitness life." }
+      ],
+      "achieved": [
+        {"text": "Taking ownership in developing application, handling responsiveness for multiple devices."},
+        {"text": "Constant effort to learn new technologies & implementation, achiever, go & getter attitude."}
+      ]
+    },
+    { "title": "Edcite",  
+      "designation":"Software Engineer",
+      "dataRangeFrom": "Dec 2013 — June 2015",
+      "location":"Bangalore",
+      "projects": [
+        { "title":"Online Assessment Platform", "project":"An education interactive web application" , "description": "Develop interactive question types, that engages teachers to correct students, and students to solve questions." }
+      ],
+      "achieved": [
+        {"text": "Developed Interactive Question types like Order List, Bar Graph, Multi-Short Text Answer & Adjective Checker board which enabled teachers/instructors to create interactive questions."},
+        {"text": "Developed creative gaming question types like scores, animation, etc, which resulting in fun learning activity, experience for the end users, by giving dynamically responses."}
+      ]
+    }
+  ]
+}

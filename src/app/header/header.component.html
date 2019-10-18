@@ -51,7 +51,8 @@
           </a>
         </div>
       </li>
-      <li><p>{{contactInfo?.address + ", " + contactInfo?.location + "-" + contactInfo?.pincode}}</p><span></span></li>
+      <li>
+        <p *ngIf="contactInfo">{{contactInfo?.address + ", " + contactInfo?.location + "-" + contactInfo?.pincode}}</p><span></span></li>
     </ul>
   </div>
 </div>

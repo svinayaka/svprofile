@@ -17,13 +17,11 @@ export class ResumebodyComponent implements OnInit {
 
   ngOnInit() {
     // tslint:disable-next-line:max-line-length
-    this.privHttp.get('./assets/workExp.json').subscribe(this.onWorkSuccess.bind(this), this.onWorkError.call(this, 'Error in fetching Work Experience!'));
+    this.privHttp.get('https://svnodeservices.herokuapp.com/svprofile/workexp').subscribe(this.onWorkSuccess.bind(this), this.onWorkError.call(this, 'Error in fetching Work Experience!'));
     // tslint:disable-next-line:max-line-length
-    this.privHttp.get('./assets/workSkill.json').subscribe(this.onSkillSuccess.bind(this), this.onSkillError.call(this, 'Error in fetching Skill Experience!'));
+    this.privHttp.get('https://svnodeservices.herokuapp.com/svprofile/workskill').subscribe(this.onSkillSuccess.bind(this), this.onSkillError.call(this, 'Error in fetching Skill Experience!'));
     // tslint:disable-next-line:max-line-length
-    this.privHttp.get('./assets/technical.json').subscribe(this.onTechSuccess.bind(this), this.onTechError.call(this, 'Error in fetching Technology!'));
-    // tslint:disable-next-line:max-line-length
-    this.privHttp.get('./assets/summary.json').subscribe(this.onSummarySuccess.bind(this), this.onSummaryError.call(this, 'Error in fetching Summary!'));
+    this.privHttp.get('https://svnodeservices.herokuapp.com/svprofile/summary').subscribe(this.onSummarySuccess.bind(this), this.onSummaryError.call(this, 'Error in fetching Summary!'));
   }
 
   onWorkSuccess(data) { this.workInfo = data.workexperience; }

@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     // tslint:disable-next-line:max-line-length
-    this.http.get('./assets/contact.json').subscribe(this.onContactSuccess.bind(this), this.onContactError.call(this, 'Error in fetching Work Experience!'));
+    this.http.get('https://svnodeservices.herokuapp.com/svprofile/contact').subscribe(this.onContactSuccess.bind(this), this.onContactError.call(this, 'Error in fetching Work Experience!'));
   }
 
   onContactSuccess(data) { this.contactInfo = data.contact; }

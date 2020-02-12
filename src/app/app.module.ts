@@ -10,24 +10,43 @@ import { WorkexperienceComponent } from './components/workexperience/workexperie
 import { ListComponent } from './components/list/list.component';
 import { ErrorHandlers } from './core/client-error-interceptor/client-error-interceptor';
 import { HttpClientReqRes } from './core/header-service/header-service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { RouterModule } from '@angular/router';
+import { route } from './app-Router/main-router';
+
+// Angular Material Modules
+import { newStyles } from './applicationExports/3rdpartComponentsExports/3rdpartyComponents';
+
+import { AboutComponent } from './sections/about/about.component';
+import { HomeComponent } from './sections/home/home.component';
+
+import { ReuseableComponents } from './applicationExports/applicationComponentExports/applicationReusableComponents';
+import { NavigationbarComponent } from './sections/navigationbar/navigationbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ResumebodyComponent,
-    WorkexperienceComponent,
-    ListComponent
+    ...ReuseableComponents,
+    AboutComponent,
+    HomeComponent,
+    NavigationbarComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(route),
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ...newStyles
   ],
   providers: [
     {provide: ErrorHandler, useClass: ErrorHandlers },
     HttpClientReqRes
   ],
+  exports: [RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

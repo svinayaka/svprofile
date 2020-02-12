@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { debug } from 'util';
 import { HttpClientReqRes } from '../core/header-service/header-service';
 
 @Component({

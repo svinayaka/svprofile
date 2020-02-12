@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { timer, interval } from 'rxjs';
+import { retry, shareReplay, retryWhen, delayWhen } from 'rxjs/operators';
 
 @Injectable()
 export class HttpClientReqRes {
@@ -19,7 +21,10 @@ export class HttpClientReqRes {
     }
     get(url) {
         const header = this.createAuthorizationHeader();
-        return this.http.get(url, { headers: header });
+        return this.http.get(url, { headers: header })
+            .pipe(retryWhen(error => {
+                return error.pipe(delayWhen(retryTime => timer(6 * 1000)));
+            }));
     }
     post(url) {
         const header = this.createAuthorizationHeader();

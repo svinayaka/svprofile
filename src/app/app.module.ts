@@ -23,6 +23,10 @@ import { HomeComponent } from './sections/home/home.component';
 
 import { ReuseableComponents } from './applicationExports/applicationComponentExports/applicationReusableComponents';
 import { NavigationbarComponent } from './sections/navigationbar/navigationbar.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './ngrxStateManagement';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,15 @@ import { NavigationbarComponent } from './sections/navigationbar/navigationbar.c
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ...newStyles
+    ...newStyles,
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+      }
+    }),
+    !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [
     {provide: ErrorHandler, useClass: ErrorHandlers },

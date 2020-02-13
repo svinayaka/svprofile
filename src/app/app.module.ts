@@ -1,7 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,41 +7,37 @@ import { WorkexperienceComponent } from './components/workexperience/workexperie
 import { ListComponent } from './components/list/list.component';
 import { ErrorHandlers } from './core/client-error-interceptor/client-error-interceptor';
 import { HttpClientReqRes } from './core/header-service/header-service';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { RouterModule } from '@angular/router';
 import { route } from './app-Router/main-router';
 
 // Angular Material Modules
-import { newStyles } from './applicationExports/3rdpartComponentsExports/3rdpartyComponents';
+import { bootstrapModules } from './applicationExports/applicationModulesExports/3rdpartyModulesExports';
+import { angularModules } from './applicationExports/applicationModulesExports/angularModulesExports';
 
-import { AboutComponent } from './sections/about/about.component';
-import { HomeComponent } from './sections/home/home.component';
 
+import { angularComponents } from './applicationExports/applicationComponentExports/applicationComponents';
 import { ReuseableComponents } from './applicationExports/applicationComponentExports/applicationReusableComponents';
-import { NavigationbarComponent } from './sections/navigationbar/navigationbar.component';
+
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './ngrxStateManagement';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ResumebodyComponent,
+    // HeaderComponent,
+    // ResumebodyComponent,
     ...ReuseableComponents,
-    AboutComponent,
-    HomeComponent,
-    NavigationbarComponent
+    ...angularComponents
   ],
   imports: [
-    BrowserModule,
+    ...angularModules,
+    ...bootstrapModules,
     RouterModule.forRoot(route),
-    NgbModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    ...newStyles,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {

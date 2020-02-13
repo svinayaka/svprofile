@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private store: Store<any>) {
     this.store.subscribe((resp) => {
       this.profileInfo = resp.ProfileInformation.userInfo;
+      console.log(this.profileInfo);
     });
   }
 

@@ -1,7 +1,6 @@
 import { Action, createReducer, on, State } from '@ngrx/store';
 import { LoadUserInfos, LoadUserInfosSuccess, UserInfoActions, UserInfoActionTypes } from './user-info.actions';
 
-
 export const userInfoFeatureKey = 'userInfo';
 
 export interface IState {

@@ -3,23 +3,23 @@
     <h1>{{contactInfo?.name}}</h1>
   </div>
   <div>
-    <mat-button-toggle-group #group="matButtonToggleGroup" >
-      <mat-button-toggle matTooltip="Home Page" value="Home" aria-label="Text align left" [routerLink]="['/home']">
+    <mat-button-toggle-group #group="matButtonToggleGroup" class="menu-container">
+      <mat-button-toggle matTooltip="Home Page" value="Home" aria-label="Text align left" [routerLink]="['/home']" class="menu-links" [routerLinkActive]="['menu-links-selected']">
           Home
       </mat-button-toggle>
-      <mat-button-toggle value="About" aria-label="Text align left" [routerLink]="['/about']">
+      <mat-button-toggle value="About" aria-label="Text align left" [routerLink]="['/about']" class="menu-links" [routerLinkActive]="['menu-links-selected']">
         About
       </mat-button-toggle>
-      <mat-button-toggle value="Work Experience" aria-label="Text align left">
+      <mat-button-toggle value="Work Experience" aria-label="Text align left" class="menu-links" [routerLinkActive]="['menu-links-selected']">
         Work Experience
       </mat-button-toggle>
-      <mat-button-toggle value="Summary" aria-label="Text align left">
+      <mat-button-toggle value="Summary" aria-label="Text align left" class="menu-links" [routerLinkActive]="['menu-links-selected']">
         Summary
       </mat-button-toggle>
-      <mat-button-toggle value="Skills" aria-label="Text align left">
+      <mat-button-toggle value="Skills" aria-label="Text align left" [routerLink]="['/skill']" class="menu-links" [routerLinkActive]="['menu-links-selected']">
         Skills
       </mat-button-toggle>
-      <mat-button-toggle value="Contact" aria-label="Text align left">
+      <mat-button-toggle value="Contact" aria-label="Text align left" class="menu-links" [routerLinkActive]="['menu-links-selected']">
         Contact
       </mat-button-toggle>
     </mat-button-toggle-group>

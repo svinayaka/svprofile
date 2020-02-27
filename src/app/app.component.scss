@@ -1,5 +1,9 @@
 @import '../styles.scss';
 
+:host {
+    height: 100%;
+}
+
 .profileviewarea  {
     display: grid;
 }

@@ -13,21 +13,22 @@ html {
 
 body {
     font-family: monospace;
-    border: 20px solid $bordercolor;
+    // border: 20px solid $bordercolor;
     box-sizing: border-box;
     background: $background;
     background: -moz-radial-gradient(center, ellipse cover,  #f8ffe8 0%, #e3f5ab 18%, #f8ffe8 41%, #f8ffe8 74%, #b7df2d 100%); 
     background: -webkit-radial-gradient(center, ellipse cover,  #f8ffe8 0%,#e3f5ab 18%,#f8ffe8 41%,#f8ffe8 74%,#b7df2d 100%); 
     background: radial-gradient(ellipse at center,  #f8ffe8 0%,#e3f5ab 18%,#f8ffe8 41%,#f8ffe8 74%,#b7df2d 100%); 
-    padding: 0.5%;
+    // padding: 0.5%;
     top:0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     transition: 2s;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-shadow: inset 0 0 20px $boxShadow-dark;
+    position: relative;
 }
 
 hr {

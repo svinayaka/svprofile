@@ -1,3 +1,10 @@
+@import '../../../variable-style.scss';
+
+:host {
+    background: $bg-navigation;
+    height: 6vh;
+}
+
 .navigationMenus {
     display: flex;
     justify-content: space-between;
@@ -8,5 +15,18 @@
     flex: 1;
     text-transform: uppercase;
     text-shadow: 5px 4px 4px #b5bf9e;
-    color: #8eda87;
+    color: $color-navigation;
+}
+
+.menu-container {
+    background: $menu-bg-navigation;
+}
+
+.menu-links {
+    background-color: $menu-link-navigation;
+    border: 1px solid $menu-border-navigation;
+}
+
+.menu-links-selected {
+    background-color : $menu-link-navigation-selected
 }

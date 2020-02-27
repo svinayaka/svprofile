@@ -1,11 +1,20 @@
 @import '@angular/material/prebuilt-themes/purple-green.css';
 
+$home-height: 94.5vh;
+
+:host {
+    position: absolute;
+    min-height: $home-height;
+    width: 100%;
+    top: 52px;
+}
+
 $imgUrl: "https://images.alphacoders.com/622/62233.png";
 $imgProfile: "https://res.cloudinary.com/svinayaka/image/upload/c_fit,h_600,w_600/a_0/v1569785986/myImage_yartm7.webp";
 
 .homeBG {
     background-image: url($imgUrl);
-    min-height: 72vh;
+    min-height: $home-height;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
